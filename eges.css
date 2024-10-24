@@ -1,0 +1,51 @@
+.box {
+    width: 50px;
+    height: 50px;
+    background: rgb(43, 80, 226);
+    transition-duration: 1000ms;
+    transition-property: background, transform;
+}
+
+.box:hover {
+    background: rgb(158, 93, 201);
+    transform: rotate(45deg) rotate(180deg);
+    background: rgb(181, 155, 177);
+
+    width: 100px;
+    height: 100px;
+}
+
+.bon {
+    width: 250px;
+    background: white;
+    border: rgb(190, 89, 89) solid;
+
+}
+
+.red {
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    background: red;
+    animation: circle 10s infinite;
+}
+
+img {
+    width: 70px;
+    height: 70px;
+    animation: move 10s infinite;
+}
+
+@keyframes circle {
+    60% {
+        left: 250px;
+    }
+
+}
+
+
+@keyframes move {
+    100% {
+        transform: rotate(600deg)
+    }
+}
